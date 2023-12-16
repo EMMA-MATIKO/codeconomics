@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATIKO'S MORTGAGE PAYMENT CALCULATOR</title>
+    <link href="mortgage.css" rel="stylesheet"></li>
+</head>
+<body>
+    <div class="container">
+        <h1>MATIKO'S MORTGAGE PAYMENT CALCULATOR:</h1>
+        <form id="mortgageForm">
+            <label for="principal">Principal:</label>
+            <input type="number" id="principal" name="principal" required>
+
+            <label for="interest">Interest Rate (%):</label>
+            <input type="number" id="interest" name="interest" required>
+
+            <label for="term">Term (in years):</label>
+            <input type="number" id="term" name="term" required>
+
+            <input type="submit" value="CALCULATE">
+        </form>
+    </div>
+
+    <script src="mortgage.js"></script>
+</body>
+</html>
