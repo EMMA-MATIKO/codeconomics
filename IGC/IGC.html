@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATIKO'S INVESTMENT GROWTH CALCULATOR</title>
+    <link href="IGC.css" rel="stylesheet"></li>
+</head>
+<body>
+    <h1>MATIKO'S INVESTMENT GROWTH CALCULATOR:</h1>
+    <div class="calculator-container">
+        <label for="initial-investment">INITIAL INVESTMENT:</label>
+        <input type="number" id="initial-investment" required><br>
+
+        <label for="annual-contributions">ANNUAL CONTRIBUTIONS:</label>
+        <input type="number" id="annual-contributions"><br>
+
+        <label for="years">YEARS:</label>
+        <input type="number" id="years" required><br>
+
+        <label for="interest-rate">ANNUAL INTEREST RATE (%):</label>
+        <input type="number" id="interest-rate" required><br>
+
+
+        <div class="calculate-button">
+            <button>CALCULATE</button>
+        </div>
+        
+
+        <label for="total-amount">TOTAL AMOUNT:</label>
+        <input type="text" id="total-amount" readonly>
+
+        <label for="interest-earned">INTEREST EARNED:</label>
+        <input type="text" id="interest-earned" readonly>
+    </div>
+
+    <script src="IGC.js"></script>
+</body>
+</html>
