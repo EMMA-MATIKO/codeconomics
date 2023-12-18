@@ -30,7 +30,7 @@ video {
   height: auto;
   z-index: -1;
   transform: translateX(-50%) translateY(-50%);
-  opacity: 0.05;
+  opacity: 0.09;
 }
 .label {
   font-family: Arial, sans-serif;
