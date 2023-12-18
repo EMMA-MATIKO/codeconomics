@@ -51,12 +51,12 @@
         var quantityB = parseInt(document.getElementById('quantity-b').value);
   
         if (isNaN(quantityA) || isNaN(quantityB)) {
-          alert('Please enter valid quantities for Good A and Good B.');
+          alert('PLEASE ENTER VALID QUANTITIES!');
           return;
         }
   
         if (quantityA > 1000 || quantityB > 1000) {
-          alert('Values cannot exceed 350.');
+          alert('VALUES CANNOT EXCEED 1000.');
           return;
         }
   
