@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
         datasets: [{
           label: 'Quantity',
           data: quantities,
-          backgroundColor: '#03a9f4'
+          backgroundColor: 'aqua'
         }]
       },
       options: {
