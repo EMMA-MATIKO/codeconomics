@@ -26,17 +26,24 @@
   </video>
   
   <form id="expense-form">
-    <label for="description">ACCOUNT NAME:</label>
-    <input type="text" id="description" required>
-    
-    <label for="date">DATE (Y-M-D):</label>
-    <input type="text" id="date" pattern="\d{4}-\d{2}-\d{2}" required>
-    
-    <label for="amount">AMOUNT:</label>
-    <input type="number" id="amount" step="0.01" required>
-
-    <button type="button" id="addExpense">ADD EXPENSE</button>
+    <table id="table">
+      <thead>
+        <tr>
+          <th>ACCOUNT NAME:</th>
+          <th>DATE:</th>
+          <th>AMOUNT:</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        <tr>
+          <td> <input type="text" id="description" required></td>
+          <td><input type="text" id="date" pattern="\d{4}-\d{2}-\d{2}" required></td>
+          <td><input type="number" id="amount" step="0.01" required></td>
+        </tr>
+      </tbody>
+    </table>
   </form>
+  <button type="button" id="addExpense">ADD EXPENSE</button>
   <button type="button" id="calculateTotal">COMPUTE TOTAL</button>
   <button type="button" id="clearTable">CLEAR TABLE</button>
   <div id="total" class="total"></div>
