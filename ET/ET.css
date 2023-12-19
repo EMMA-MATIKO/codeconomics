@@ -75,3 +75,22 @@ body {
   .delete-btn:hover {
     background-color: #2980b9;
   }
+
+  #table {
+    background-color: black;
+    color: blue;
+    border-collapse: collapse;
+    width: 20%;
+  }
+
+  #table td, #table th {
+border: 1px solid white;
+padding: 8px;
+}
+
+#table th {
+background-color: rgba(0, 0, 255, 0.544);
+color: aqua;
+text-align: center;
+animation: coloranimation 100s infinite
+}
