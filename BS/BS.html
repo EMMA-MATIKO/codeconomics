@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MATIKO'S BALANCE SHEET CALCULATOR:</title>
+  <link href="TB.css" rel="stylesheet"></li>
+</head>
+<body style="background-color: black;">
+  <h1 style="color: blue;">MATIKO'S BALANCE SHEET CALCULATOR:</h1><br><br>
+  <table>
+    <tr>
+      <th class="sn">Sn:</th>
+      <th class="account-name">ACCOUNT NAME:</th>
+      <th class="debit">DEBIT:</th>
+      <th class="credit">CREDIT:</th>
+    </tr>
+    <tr>
+      <td class="sn">1</td>
+      <td class="account-name"><input type="text" id="accountName1"></td>
+      <td class="debit"><input type="text" id="debit1"></td>
+      <td class="credit"><input type="text" id="credit1"></td>
+    </tr>
+  </table>
+  <div class="buttons">
+    <button id="addRow">ADD ROW</button>
+    <button id="checkBalance">CHECK BALANCE</button>
+  </div>
+
+  <video autoplay muted loop>
+    <source src="bg.mp4" type="video/mp4">
+  </video>
+
+  <div class="notification" id="notification"></div>
+  <script src="TB.js"></script>
+</body>
+</html>
