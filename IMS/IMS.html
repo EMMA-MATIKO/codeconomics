@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MATIKO'S SIMPLE INVENTORY MANAGEMENT SYSTEM</title>
+  <link rel="stylesheet" href="IMS.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>MATIKO'S SIMPLE INVENTORY MANAGEMENT SYSTEM:</h1>
+  </header>
+  
+  <main>
+    <section class="inventory-section">
+      <h2>INVENTORY OVERVIEW:</h2>
+      <canvas id="inventoryChart" width="500" height="200"></canvas>
+    </section>
+    
+    <section class="inventory-section2">
+      <h2>ITEM LIST:</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ITEM NAME</th>
+            <th>QUANTITY</th>
+            <th>ACTIONS</th>
+          </tr>
+        </thead>
+        <tbody id="inventory-table">
+        </tbody>
+      </table>
+      <button id="addItem">ADD ITEM</button>
+    </section>
+  </main>
+
+  <video autoplay muted loop>
+    <source src="bg.mp4" type="video/mp4">
+  </video>
+
+  <script src="IMS.js"></script>
+</body>
+</html>

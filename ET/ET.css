@@ -1,0 +1,77 @@
+body {
+    background-color: #000;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'BlinkMacSystem';
+  }
+
+  video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0.09;
+  }
+
+  h1 {
+    color: blue;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    color: aqua;
+    margin-bottom: 20px;
+  }
+
+  th, td {
+    padding: 12px;
+    border: 1px solid aqua;
+    text-align: center;
+  }
+
+  th {
+    background-color: blue;
+  }
+
+  button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  button:hover {
+    background-color: aqua;
+  }
+
+  .total {
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .delete-btn {
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .delete-btn:hover {
+    background-color: #2980b9;
+  }

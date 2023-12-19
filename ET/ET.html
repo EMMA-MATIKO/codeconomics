@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MATIKO'S SUBTLE EXPENSE TRACKER</title>
+  <link href="ET.css" rel="stylesheet"></link>
+</head>
+<body>
+  <h1>MATIKO'S SUBTLE EXPENSE TRACKER:</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>ACCOUNT NAME</th>
+        <th>DATE</th>
+        <th>AMOUNT</th>
+        <th>ACTION</th>
+      </tr>
+    </thead>
+    <tbody id="expense-table">
+    </tbody>
+  </table>
+
+  <video autoplay muted loop>
+    <source src="bg.mp4" type="video/mp4">
+  </video>
+  
+  <form id="expense-form">
+    <label for="description">ACCOUNT NAME:</label>
+    <input type="text" id="description" required>
+    
+    <label for="date">DATE (Y-M-D):</label>
+    <input type="text" id="date" pattern="\d{4}-\d{2}-\d{2}" required>
+    
+    <label for="amount">AMOUNT:</label>
+    <input type="number" id="amount" step="0.01" required>
+
+    <button type="button" id="addExpense">ADD EXPENSE</button>
+  </form>
+  <button type="button" id="calculateTotal">COMPUTE TOTAL</button>
+  <button type="button" id="clearTable">CLEAR TABLE</button>
+  <div id="total" class="total"></div>
+  <script src="ET.js"></script>
+</body>
+</html>

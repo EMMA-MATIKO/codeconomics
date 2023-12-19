@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html> 
+  <title>MATIKO'S CASH ACCOUNT CALCULATOR:</title>
+  <head>
+    <link href="CA.css" rel="stylesheet"></li>
+</head>
+
+<body>
+  <h1>MATIKO'S CASH ACCOUNT CALCULATOR:</h1><br>
+  <table id="table">
+    <thead>
+      <tr>
+        <th>DEBIT:</th>
+        <th>DEBIT:</th>
+        <th>DEBIT:</th>
+        <th>DEBIT:</th>
+        <th>CREDIT:</th>
+        <th>CREDIT:</th>
+        <th>CREDIT:</th>
+        <th>CREDIT:</th>
+      </tr>
+      <tr>
+        <th>PARTICULAR:</th>
+        <th>DATE:</th>
+        <th>FOLIO:</th>
+        <th>AMOUNT:</th>
+        <th>PARTICULAR:</th>
+        <th>DATE:</th>
+        <th>FOLIO:</th>
+        <th>AMOUNT:</th>
+      </tr>
+    </thead>
+    <tbody id="table-body">
+      <tr>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td  id="debinput"><input type="number"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td id="credinput"><input type="number"></td>
+      </tr>
+    </tbody>
+  </table>
+<div class="buttons">
+<button onclick="ADD_ROW()">ADD ROW</button>
+<button onclick="checkBalance()">CHECK BALANCE</button>
+</div>
+
+<video autoplay muted loop>
+  <source src="bg.mp4" type="video/mp4">
+</video>
+
+
+  <script src="CA.js"></script>
+  <section>
+    <p id="debit-total" style="color: aqua;font-size: 30px; text-align: center; margin-top: 20px;"></p>
+    <p id="credit-total" style="color: aqua;font-size: 30px; text-align: center; margin-top: 20px;"></p>
+    <p id="balance" style="color: aqua;font-size: 30px; text-align: center; margin-top: 20px;"></p>
+  </section>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATIKO'S INVESTMENT PLAN SIMULATOR</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="IPS.css" rel="stylesheet"></li>
+</head>
+<body>
+    <h1>MATIKO'S INVESTMENT PLAN SIMULATOR:</h1><br><br>
+    <div>
+        <label for="initial-capital">INITIAL CAPITAL:</label>
+        <input type="number" id="initial-capital" min="0" required>
+    </div><br>
+    <div>
+        <label for="rice-price">PRICE OF RICE PER CONSUMER:</label>
+        <input type="number" id="rice-price" min="0" required>
+    </div><br>
+    <div>
+        <label for="num-consumers">TOTAL NUMBER OF CONSUMERS:</label>
+        <input type="number" id="num-consumers" min="0" required>
+    </div><br>
+    <button onclick="calculateExpenditure()">CALCULATE</button>
+    <div><br>
+        <h2>INVESTMENT PLAN GRAPH:</h2>
+        <canvas id="expenditure-chart"></canvas>
+    </div>
+
+    <video autoplay muted loop>
+        <source src="bg.mp4" type="video/mp4">
+      </video>
+
+    <script src="IPS.js"></script>
+</body>
+</html>

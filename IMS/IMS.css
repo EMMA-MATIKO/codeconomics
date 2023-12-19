@@ -1,0 +1,99 @@
+body {
+    background-color: #000; 
+    font-family: 'BlinkMacSystem';
+    color: #ffffff; 
+
+  }
+
+  video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0.09;
+  }
+
+  
+  header {
+    text-align: center;
+  }
+  
+  h1 {
+    color: blue; 
+    text-decoration: underline;
+    animation: coloranimation 300s infinite;
+  }
+
+  @keyframes coloranimation {
+    0%{color: aqua;}
+    25%{color: blue;}
+    50%{color: aqua;}
+    75%{color: blue;}
+    100%{color: aqua;}
+  }
+   
+  h2 {
+    text-decoration: underline;
+    color: aqua;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+  }
+  
+  .inventory-section {
+    background-color: #111;
+    padding: 30px;
+    width: 560px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(2, 235, 227, 0.899);
+  }
+
+  .inventory-section2 {
+    width: 500px;
+    background-color: #111;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(2, 235, 227, 0.899);
+
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #ffffff;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #03a9f4;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #1565c0; 
+  }
+  
+  button {
+    background-color: #1565c0;
+    color: #ffffff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #03a9f4; 
+  }
+  
+  
