@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("addItem").addEventListener("click", function () {
     var itemName = prompt("Enter the item name:");
@@ -17,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var newQuantity = parseInt(prompt("Enter the new quantity:"), 10);
         if (!isNaN(newQuantity) && newQuantity >= 0) {
           row.cells[1].innerHTML = newQuantity;
+          updateChart();
         }
       };
       actionsCell.appendChild(updateButton);
@@ -26,29 +26,35 @@ document.addEventListener("DOMContentLoaded", function () {
       removeButton.onclick = function () {
         if (confirm("Are you sure you want to remove this item?")) {
           table.deleteRow(row.rowIndex);
-          updateChart(); 
+          updateChart();
         }
       };
       actionsCell.appendChild(removeButton);
 
-      updateChart();
+      updateChart(); 
     }
   });
 
-  
   function updateChart() {
     var tableRows = document.getElementById("inventory-table").rows;
     var itemNames = [];
     var quantities = [];
 
-    
-    for (var i = 1; i < tableRows.length; i++) {
+    for (var i = 0; i < tableRows.length; i++) {
       itemNames.push(tableRows[i].cells[0].innerHTML);
       quantities.push(parseInt(tableRows[i].cells[1].innerHTML, 10));
     }
 
-    
     var ctx = document.getElementById("inventoryChart").getContext("2d");
+
+
+    var existingChart = Chart.getChart("inventoryChart");
+
+    
+    if (existingChart) {
+      existingChart.destroy();
+    }
+
     new Chart(ctx, {
       type: 'bar',
       data: {
@@ -56,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
         datasets: [{
           label: 'Quantity',
           data: quantities,
-          backgroundColor: '#03a9f4' 
+          backgroundColor: '#03a9f4'
         }]
       },
       options: {
@@ -69,5 +75,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  updateChart();
+  updateChart(); 
 });
